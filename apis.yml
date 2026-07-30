@@ -1,7 +1,35 @@
 aid: koltin
 name: Koltin
-description: Koltin is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Koltin is a Mexican health membership company serving older adults, aimed at
+  people aged roughly 50 to 84 and at the adult children who want to protect
+  their parents and grandparents. Koltin is explicit that it is not an insurer
+  and does not sell traditional policies: it packages access to private medical
+  care, preventive follow-up, and financial protection against costly illness or
+  accident into a membership. The membership pairs a major-medical expense
+  insurance product operated and issued by BBVA Seguros Salud with preventive
+  medicine — longevity assessments, an integrated medical check-up, video
+  consultations, and continuous follow-up — plus a social community program
+  (painting, tai chi, film discussion, dance). It operates across CDMX, Estado
+  de Mexico, Guadalajara, Monterrey, Queretaro, Puebla, Guanajuato, Cuernavaca,
+  Merida, and Veracruz, and publishes a member portal, a hospital network
+  directory, and an extensive Spanish-language blog on aging and preventive
+  health. Koltin is a 500 Global portfolio company. It publishes no public
+  developer portal, API documentation, or machine-readable API specification;
+  it does publish a first-party llms.txt describing the site for language
+  models.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/62d19c19ebf29a2ab38f9ed2/69122f4e9a99b3775ef10b5d_Open%20grap%20website%20images.png
 url: https://raw.githubusercontent.com/api-evangelist/koltin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +37,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none-published
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Insurance
+- Preventive Medicine
+- Senior Care
+- Membership
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +59,30 @@ maintainers:
 common:
 - type: Website
   url: https://koltin.mx
+- type: Blog
+  url: https://koltin.mx/blog
+- type: Support
+  url: https://koltin.mx/faqs-sobre-koltin
+- type: SignUp
+  url: https://koltin.mx/contrata
+- type: Login
+  url: https://clientes.koltin.mx/members/login
+- type: Pricing
+  url: https://koltin.mx/contrata
+- type: TermsOfService
+  url: https://koltin.mx/terminos-condiciones
+- type: PrivacyPolicy
+  url: https://koltin.mx/aviso-privacidad
+- type: About
+  url: https://koltin.mx/nosotros
+- type: Careers
+  url: https://koltin.mx/cultura-y-vacantes
+- type: LLMsTxt
+  url: llms/koltin-llms.txt
+- type: DomainSecurity
+  url: security/koltin-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
