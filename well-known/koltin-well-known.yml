@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://koltin.mx/.well-known/*
+hosts:
+- host: https://koltin.mx
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+result: none-published
+notes: >-
+  Koltin publishes no /.well-known/ discovery surface. It does publish a
+  first-party /llms.txt (captured in llms/koltin-llms.txt). robots.txt is
+  present and fully permissive (Allow: /) with a sitemap reference.
